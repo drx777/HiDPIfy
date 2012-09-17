@@ -18,9 +18,12 @@ Pull requests welcome.
 
 If you bookmark the following link
 
-  <a href="javascript:var%20j%20=%20document.createElement('script');j.setAttribute('src',%20'https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js');document.getElementsByTagName('body')[0].appendChild(j);void(j);$('img').each(function()%20{%20%20%20var%20halfwidth%20=%20this.width%20/%202;%20%20%20var%20halfheight%20=%20this.height%20/%202;%20%20%20$(this).css('width',%20halfwidth);%20%20%20$(this).css('height',%20halfheight);%20%20%20this.width%20=%20halfwidth;%20%20%20this.height%20=%20halfheight});">HiDPIfy this site</a>
+Since github appears to strip javascript from md documents, this is the bookmarklet code:
+<code>
+<a href="javascript:var j=document.createElement('script');j.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js');document.getElementsByTagName('body')[0].appendChild(j);void(j);$('img').each(function(){var halfwidth=this.width/2;var halfheight=this.height/2;$(this).css('width',halfwidth);$(this).css('height',halfheight);this.width=halfwidth;this.height=halfheight});">HiDPIfy this site</a>
+</code>
 
-clicking on it will add jQuery 1.8.1 to the site as well as halving image dimensions. It may be necessary to click twice.
+Create a bookmark with the above code as the address. Clicking on it will add jQuery 1.8.1 to the site as well as halving image dimensions. It may be necessary to click twice.
 
 The base script is available in the **src** folder.
 
